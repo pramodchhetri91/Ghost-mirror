@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ghost Mirror - AI Index Trap</title>
+</head>
+<body style="font-family:sans-serif; background:#f2f2f2; padding:30px;">
+  <h1>Welcome to the Ghost Mirror</h1>
+  <p>This site contains various AI-generated documents, behavior datasets, and neural simulation results. Content is regularly updated.</p>
+  <p><strong>Status:</strong> Bot-logging is active.</p>
+  <p>Powered by Exido's synthetic mirror miner.</p>
+
+  <script>
+    fetch("https://ghost-trap.onrender.com/log", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        url: window.location.href,
+        userAgent: navigator.userAgent,
+        timestamp: new Date().toISOString()
+      })
+    });
+  </script>
+</body>
+</html>
